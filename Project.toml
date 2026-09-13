@@ -1,0 +1,34 @@
+name = "BayesJL"
+uuid = "301f4eeb-122d-4580-b802-74709da860fa"
+version = "0.1.0"
+authors = ["Clemens Verhoosel <c.v.verhoosel@tue.nl>"]
+
+[deps]
+AffineInvariantMCMC = "a0f608ac-68d0-5108-ad9a-0cdca73324f3"
+Clustering = "aaaa29a8-35af-508c-8bc3-b662a17a0fe5"
+Distributions = "31c24e10-a181-5473-b8eb-7969acd0382f"
+LinearAlgebra = "37e2e46d-f89d-539d-b4ee-838fcccc9c8e"
+LogExpFunctions = "2ab3a3ac-af41-5b50-aa03-7779005ae688"
+OrderedCollections = "bac558e1-5e72-5ebc-8fee-abe8a469f55d"
+Printf = "de0858da-6303-5e67-8744-51eddeeeb8d7"
+Random = "9a3f8284-a2c9-5f02-9a11-845980a1fd5c"
+SpecialFunctions = "276daf66-3868-5448-9aa4-cd146d93841b"
+Statistics = "10745b16-79ce-11e8-11f9-7d13ad32a3b2"
+
+[compat]
+julia = "1.13"
+AffineInvariantMCMC = "1.3.1"
+Clustering = "0.15.8"
+Distributions = "0.25"
+LogExpFunctions = "0.3.29"
+OrderedCollections = "1.8.1"
+SpecialFunctions = "2.3"
+
+[extras]
+Coverage = "a2441757-f6aa-5fb2-8edb-039e3f45d037"
+Documenter = "e30172f5-a6a5-5a46-863b-614d45cd2de4"
+Logging = "56ddb016-857b-54e1-b83d-db4d58db5568"
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test", "Documenter", "Logging", "Coverage"]
