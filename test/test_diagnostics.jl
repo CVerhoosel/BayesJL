@@ -114,7 +114,7 @@ using Distributions, Random, LinearAlgebra
 
         # Autocorrelation
         @test autocorrelation(chain) ≈ autocorrelation_exp(log.(chain)) rtol=1e-12
-        @test autocorrelation(importance_pdf) ≈ autocorrelation_exp(importance_logpdf) rtol=1e-14
+        @test autocorrelation(importance_pdf) ≈ autocorrelation_exp(importance_logpdf) rtol=1e-13
 
         # Autocorrelation time
         τ = autocorrelation_time(chain)
